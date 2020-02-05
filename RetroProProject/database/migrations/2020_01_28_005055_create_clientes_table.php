@@ -17,6 +17,7 @@ class CreateClientesTable extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->string('name');
             $table->string('last_name');
+            $table->string('cc');
             $table->date('birth');
             $table->integer('phone');
             $table->string('address');

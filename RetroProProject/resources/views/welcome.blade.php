@@ -71,7 +71,7 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-
+                        <!-- quitando el if se elimina el boton -->
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif

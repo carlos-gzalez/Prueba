@@ -18,7 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('cliente','ClienteController');
 Route::resource('producto','ProductoController');
 Route::resource('provedor','ProvedorController');
+
+Route::get('/cancelar', function (){
+    return redirect()->route('cliente.index')->with('cancelar','Accion Cancelada!');
+    }
+)->name('cancelar');
+
+Route::get('/cliente/{id}/confirm','ClienteController@confirm')->name('cliente.confirm');
