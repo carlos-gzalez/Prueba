@@ -86,7 +86,20 @@ class ClienteController extends Controller
      */
     public function update(Request $request, $id)
     {
-       dd($id);
+        $cliente = cliente::findOrFail($id);
+        //$cliente->fill($request->all());
+
+        $cliente->name= $request->nombre;
+        $cliente->last_name= $request->apellido;
+        //$cliente->cc= $request->cedula;
+        $cliente->city= $request->ciudad;
+        $cliente->address= $request->direccion;
+        $cliente->phone= $request->telefono;
+        $cliente->birth= $request->fecha;
+
+        $cliente->save();
+        //return 'Registros guardados';
+        return redirect()->route('cliente.index')->with('datos','Registro Actualizado Correctamente!');
     }
 
     /**

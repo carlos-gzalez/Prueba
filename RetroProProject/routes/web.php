@@ -13,6 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
+    //return view('template.inicio');
 });
 
 Auth::routes();
@@ -30,3 +31,5 @@ Route::get('/cancelar', function (){
 )->name('cancelar');
 
 Route::get('/cliente/{id}/confirm','ClienteController@confirm')->name('cliente.confirm');
+
+Route::get('/producto/{id}/confirm','ProductoController@confirm')->name('producto.confirm');

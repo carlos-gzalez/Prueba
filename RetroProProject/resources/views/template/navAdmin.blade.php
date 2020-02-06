@@ -10,7 +10,10 @@
                     <a class="nav-link navbar-brand text-white" href="{{route('cliente.index')}}">Clientes <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-brand text-white" href="#">Articulos</a>
+                    <a class="nav-link navbar-brand text-white" href="{{route('producto.index')}}">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-brand text-white" href={{route('provedor.index')}}>Proveedores</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbar-brand text-white" href="#">Alquileres</a>
