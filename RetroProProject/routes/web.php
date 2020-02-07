@@ -33,3 +33,8 @@ Route::get('/cancelar', function (){
 Route::get('/cliente/{id}/confirm','ClienteController@confirm')->name('cliente.confirm');
 
 Route::get('/producto/{id}/confirm','ProductoController@confirm')->name('producto.confirm');
+
+Route::get('/conctacto','RetroPro@contacto')->name('RetroPro.contacto');
+Route::get('/galeria','RetroPro@galeria')->name('RetroPro.galeria');
+Route::get('/servicios','RetroPro@contacto')->name('RetroPro.servicios');
+Route::get('/nosotros','RetroPro@contacto')->name('RetroPro.nosotros');

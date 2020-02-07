@@ -111,11 +111,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/producto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views" />
+      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\template" />
       <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\producto" />
       <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\proveedor" />
       <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\alquiler" />
@@ -153,7 +158,9 @@
       <workItem from="1580221314137" duration="6095000" />
       <workItem from="1580353088264" duration="9100000" />
       <workItem from="1580854341752" duration="2781000" />
-      <workItem from="1580936242868" duration="10181000" />
+      <workItem from="1580936242868" duration="10787000" />
+      <workItem from="1581039772614" duration="6763000" />
+      <workItem from="1581111315119" duration="3216000" />
     </task>
     <servers />
   </component>
