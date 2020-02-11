@@ -6,8 +6,6 @@
 
     @include('template.nav')
 
-
-
     <div class="container">
         <br>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
