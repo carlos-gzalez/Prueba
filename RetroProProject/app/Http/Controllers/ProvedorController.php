@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\provedor;
+
 class ProvedorController extends Controller
 {
     /**
@@ -13,10 +13,7 @@ class ProvedorController extends Controller
      */
     public function index()
     {
-        $provedor= provedor::paginate(4);
-        // dd prueba traer todos los datos
-        //return dd($cliente);
-        return view('provedor.index',compact('provedor'));
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class ProvedorController extends Controller
      */
     public function create()
     {
-        return view('provedor.create');
+        //
     }
 
     /**
@@ -37,11 +34,7 @@ class ProvedorController extends Controller
      */
     public function store(Request $request)
     {
-        $provedor = new provedor;
-        $provedor->name = $request->nombre;
-        $provedor->location = $request->ubicacion;
-        $provedor->save();
-        return redirect()->route('provedor.index')->with('datos', 'Registro guardado Correctamente!');
+        //
     }
 
     /**
@@ -63,8 +56,7 @@ class ProvedorController extends Controller
      */
     public function edit($id)
     {
-        $provedor=provedor::findOrFail($id);
-        return view ('provedor.edit',compact('provedor'));
+        //
     }
 
     /**
@@ -76,11 +68,7 @@ class ProvedorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $provedor=provedor::findOrFail($id);
-        $provedor->name = $request->nombre;
-        $provedor->location = $request->ubicacion;
-        $provedor->save();
-        return redirect()->route('provedor.index')->with('datos', 'Registro Actualizado Correctamente!');
+        //
     }
 
     /**
@@ -92,11 +80,5 @@ class ProvedorController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function confirm($id)
-    {
-        $provedor = provedor::findOrFail($id);
-        return view('provedor.confirm', compact('provedor'));
     }
 }

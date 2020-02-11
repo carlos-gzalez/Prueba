@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'ClienteController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('cliente','ClienteController');
@@ -34,9 +34,7 @@ Route::get('/cliente/{id}/confirm','ClienteController@confirm')->name('cliente.c
 
 Route::get('/producto/{id}/confirm','ProductoController@confirm')->name('producto.confirm');
 
-Route::get('/provedor/{id}/confirm','ProvedorController@confirm')->name('provedor.confirm');
-
 Route::get('/conctacto','RetroPro@contacto')->name('RetroPro.contacto');
 Route::get('/galeria','RetroPro@galeria')->name('RetroPro.galeria');
-Route::get('/servicios','RetroPro@servicios')->name('RetroPro.servicios');
-Route::get('/nosotros','RetroPro@nosotros')->name('RetroPro.nosotros');
+Route::get('/servicios','RetroPro@contacto')->name('RetroPro.servicios');
+Route::get('/nosotros','RetroPro@contacto')->name('RetroPro.nosotros');

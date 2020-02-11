@@ -19,7 +19,8 @@
 
 </head>
 
-<body  style=" margin-top: 85px;">
+<body  style=" margin-top: 85px;"> <!--background=" {{ asset('images\b1.jpg') }}"-->
+
     @yield('contenido')
 
 </body>

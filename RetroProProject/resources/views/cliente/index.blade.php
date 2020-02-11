@@ -1,12 +1,16 @@
 @extends('template.plantilla')
 
 @section('titulo','Cliente')
+
+
 @section('contenido')
 
     @include('template.navAdmin')
 
-    @if(session('datos'))
 
+
+    @if(session('datos'))
+        <br>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{session('datos')}}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
