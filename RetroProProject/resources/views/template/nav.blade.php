@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-                <a class="nav-link navbar-brand text-white" href="{{route('RetroPro.contacto')}}">Servicios</a>
+                <a class="nav-link navbar-brand text-white" href="{{route('RetroPro.servicios')}}">Servicios</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link navbar-brand text-white" href="{{route('RetroPro.galeria')}}" >Galeria</a>
@@ -16,8 +16,11 @@
             <li class="nav-item">
                 <a class="nav-link navbar-brand text-white" href="{{route('RetroPro.contacto')}}">Contacto</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-brand text-white" href="{{route('RetroPro.nosotros')}}">Nosotros</a>
+            </li>
             <li class="nav-item ">
-                <a class="nav-link navbar-brand text-white" href="{{route('RetroPro.contacto')}}">Login</a>
+                <a class="nav-link navbar-brand text-white" href="{{route('login')}}">Login</a>
             </li>
 
         </ul>
