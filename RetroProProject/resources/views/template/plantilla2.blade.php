@@ -19,9 +19,9 @@
 
 </head>
 
-<body  style=" margin-top: 85px;"> <!--background=" {{ asset('images\b1.jpg') }}"-->
+<body  background=" {{ asset('images\b1.jpg') }}"  style=" margin-top: 85px;" >
 
-    @yield('contenido')
+@yield('contenido2')
 
 </body>
 </html>
