@@ -24,12 +24,12 @@ class RetroPro extends Controller
 
     public function servicios()
     {
-        return view('template.contacto');
+        return view('template.servicios');
     }
 
     public function nosotros()
     {
-        return view('template.contacto');
+        return view('template.nosotros');
     }
 
     public function contacto()
