@@ -7,7 +7,11 @@
 
     @include('template.navAdmin')
 
-
+    <div class="container">
+        <h1>
+            Proveedores
+        </h1>
+    </div>
 
     @if(session('datos'))
         <br>

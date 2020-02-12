@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\provedor;
-class ProvedorController extends Controller
+use App\reservacion;
+
+class ReservacionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,10 +14,10 @@ class ProvedorController extends Controller
      */
     public function index()
     {
-        $provedor= provedor::paginate(4);
+        $reservacion= reservacion::paginate(4);
         // dd prueba traer todos los datos
         //return dd($cliente);
-        return view('provedor.index',compact('provedor'));
+        return view('reservacion.index',compact('reservacion'));
     }
 
     /**
@@ -26,7 +27,7 @@ class ProvedorController extends Controller
      */
     public function create()
     {
-        return view('provedor.create');
+        return view('reservacion.create');
     }
 
     /**
@@ -37,11 +38,11 @@ class ProvedorController extends Controller
      */
     public function store(Request $request)
     {
-        $provedor = new provedor;
-        $provedor->name = $request->nombre;
-        $provedor->location = $request->ubicacion;
-        $provedor->save();
-        return redirect()->route('provedor.index')->with('datos', 'Registro guardado Correctamente!');
+        $reservacion = new reservacion;
+        $reservacion->id_customer = $request->id_customer;
+        $reservacion->id_product = $request->id_product;
+        $reservacion->save();
+        return redirect()->route('reservacion.index')->with('datos', 'Registro guardado Correctamente!');
     }
 
     /**
@@ -63,8 +64,8 @@ class ProvedorController extends Controller
      */
     public function edit($id)
     {
-        $provedor=provedor::findOrFail($id);
-        return view ('provedor.edit',compact('provedor'));
+        $reservacion=reservacion::findOrFail($id);
+        return view ('reservacion.edit',compact('reservacion'));
     }
 
     /**
@@ -76,11 +77,11 @@ class ProvedorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $provedor=provedor::findOrFail($id);
-        $provedor->name = $request->nombre;
-        $provedor->location = $request->ubicacion;
-        $provedor->save();
-        return redirect()->route('provedor.index')->with('datos', 'Registro Actualizado Correctamente!');
+        $reservacion=reservacion::findOrFail($id);
+        $reservacion->id_customer = $request->id_customer;
+        $reservacion->id_product = $request->id_product;
+        $reservacion->save();
+        return redirect()->route('reservacion.index')->with('datos', 'Registro Actualizado Correctamente!');
     }
 
     /**
@@ -91,15 +92,15 @@ class ProvedorController extends Controller
      */
     public function destroy($id)
     {
-        $provedor = provedor::findOrFail($id);
+        $reservacion = reservacion::findOrFail($id);
         //return dd($cliente);
-        $provedor->delete();
-        return redirect()->route('provedor.index')->with('datos', 'Registro Eliminado Correctamente!');
+        $reservacion->delete();
+        return redirect()->route('reservacion.index')->with('datos', 'Registro Eliminado Correctamente!');
     }
 
     public function confirm($id)
     {
-        $provedor = provedor::findOrFail($id);
-        return view('provedor.confirm', compact('provedor'));
+        $reservacion = reservacion::findOrFail($id);
+        return view('reservacion.confirm', compact('reservacion'));
     }
 }
