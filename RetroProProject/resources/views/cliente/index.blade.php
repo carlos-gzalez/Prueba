@@ -5,11 +5,6 @@
 
     @include('template.navAdmin')
 
-    <div class="container">
-        <h1>
-            Clientes
-        </h1>
-    </div>
     @if(session('datos'))
 
         <div class="alert alert-success alert-dismissible fade show" role="alert">

@@ -1,4 +1,3 @@
-
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #07041E">
     <a class="navbar-brand" href="#">
         <img src="{{ asset('images\logo.jpg') }}" width="180 px" height="70 px">
