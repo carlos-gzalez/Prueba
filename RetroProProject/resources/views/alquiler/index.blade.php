@@ -1,13 +1,17 @@
 @extends('template.plantilla')
 
-@section('titulo','Alquiler')
+@section('titulo','Reservación')
 
 
 @section('contenido')
 
     @include('template.navAdmin')
 
-
+    <div class="container">
+        <h1>
+            Reservaciones
+        </h1>
+    </div>
 
     @if(session('datos'))
         <br>
@@ -27,51 +31,49 @@
             </button>
         </div>
     @endif
+    <div>
+        {{$reservacion}}
+    </div>
 
     <div class="container">
         <div class="row  col-md-offset-2 custyle">
             <table class="table table-striped custab">
                 <thead>
-                <a href="{{route('cliente.create')}}" class="btn btn-primary btn-xs pull-right"><b>+</b> Agregar Cliente</a>
+                <a href="{{route('reservacion.create')}}" class="btn btn-primary btn-xs pull-right"><b>+</b> Agregar Reserva</a>
 
                 <tr>
                     <th>ID</th>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Cedula</th>
-                    <th>Fecha nacimiento</th>
-                    <th>Telefono</th>
-                    <th>Dirección</th>
-                    <th>Ciudad</th>
+                    <th>ID Cliente</th>
+                    <!--    <th>Nombre Cliente</th>
+                        <th>ID Producto</th> -->
+                    <th>Producto</th>
                     <th class="text-center">Action</th>
                 </tr>
                 </thead>
-                @foreach($cliente as $clienteitem)
-                <tr>
-                    <td>{{$clienteitem->id}}</td>
-                    <td>{{$clienteitem->name}}</td>
-                    <td>{{$clienteitem->last_name}}</td>
-                    <th>{{$clienteitem->cc}}</th>
-                    <td>{{$clienteitem->birth}}</td>
-                    <td>{{$clienteitem->phone}}</td>
-                    <td>{{$clienteitem->address}}</td>
-                    <td>{{$clienteitem->city}}</td>
-                    <td class="text-center">
-                        <a class='btn btn-info btn-xs' href="{{route('cliente.edit',$clienteitem->id)}}">
+                @foreach($reservacion as $reservacionitem)
+                    <tr>
+                        <td>{{$reservacionitem->id}}</td>
+                        <td>{{$reservacionitem->id_customer}}</td>
+                        <td>{{$reservacionitem->id_product}}</td>
+
+                        <td class="text-center">
+                        <!--
+                        <a class='btn btn-info btn-xs' href="{{route('reservacion.edit',$reservacionitem->id)}}">
                             <span class="glyphicon glyphicon-edit">
                             </span> Edit
                         </a>
-                        <a href="{{route('cliente.confirm',$clienteitem->id)}}" class="btn btn-danger btn-xs">
+                        -->
+                            <a href="{{route('reservacion.confirm',$reservacionitem->id)}}" class="btn btn-danger btn-xs">
                             <span class="glyphicon glyphicon-remove">
                             </span> Del
-                        </a>
-                    </td>
-                </tr>
+                            </a>
+                        </td>
+                    </tr>
                 @endforeach
 
             </table>
         </div>
-        {{$cliente}}
+        {{$reservacion}}
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

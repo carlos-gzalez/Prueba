@@ -16,7 +16,7 @@
                     <a class="nav-link navbar-brand text-white" href={{route('provedor.index')}}>Proveedores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-brand text-white" href="#">Alquileres</a>
+                    <a class="nav-link navbar-brand text-white" href="{{route('reservacion.index')}}">Alquileres</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbar-brand text-white" href="{{route('register')}}">Usuario</a>
