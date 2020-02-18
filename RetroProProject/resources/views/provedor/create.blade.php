@@ -12,7 +12,7 @@
             <div class="form-row">
                 <div class="col-md-6 mb-3">
                     <label for="validationCustom01">Nombre</label>
-                    <input type="text" name="nombre" class="form-control" id="validationCustom01" placeholder="nombre" value="" required>
+                    <input type="text" name="nombre" class="form-control" pattern="[A-Za-z]+" id="validationCustom01" placeholder="nombre" value="" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>

@@ -13,7 +13,7 @@
             <div class="form-row">
                 <div class="col-md-6 mb-3">
                     <label for="validationCustom01">Nombre</label>
-                    <input type="text" name="nombre" class="form-control" id="validationCustom01" placeholder="nombre" value="{{$provedor->name}}" required>
+                    <input type="text" name="nombre" class="form-control" id="validationCustom01" pattern="[A-Za-z]+" placeholder="nombre" value="{{$provedor->name}}" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>

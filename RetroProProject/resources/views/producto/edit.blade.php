@@ -15,14 +15,14 @@
             <div class="form-row">
                 <div class="col-md-6 mb-3">
                     <label for="validationCustom01">Nombre</label>
-                    <input type="text" name="nombre" class="form-control" id="validationCustom01" placeholder="nombre" value="{{$producto->name}}" required>
+                    <input type="text" name="nombre" class="form-control" id="validationCustom01" pattern="[A-Za-z]+" placeholder="nombre" value="{{$producto->name}}" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="validationCustom02">Marca</label>
-                    <input type="text" name="brand" class="form-control" id="validationCustom02" placeholder="Marca" value="{{$producto->brand}}" required>
+                    <input type="text" name="brand" class="form-control" id="validationCustom02" pattern="[A-Za-z]+" placeholder="Marca" value="{{$producto->brand}}" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
@@ -38,14 +38,14 @@
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom04">Stock</label>
-                    <input type="text" name="stock" class="form-control" id="validationCustom04" placeholder="Stock" value="{{$producto->stock}}" required>
+                    <input type="text" name="stock" class="form-control" id="validationCustom04" pattern="[0-9]+" placeholder="Stock" value="{{$producto->stock}}" required>
                     <div class="invalid-feedback">
                         Please provide a valid city.
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="validationCustom05">Costo</label>
-                    <input type="text" name="costo" class="form-control" id="validationCustom05" placeholder="Dirección" value="{{$producto->cost}}" required>
+                    <input type="text" name="costo" class="form-control" id="validationCustom05" pattern="[0-9]+" placeholder="Dirección" value="{{$producto->cost}}" required>
                     <div class="invalid-feedback">
                         Please provide a valid state.
                     </div>
