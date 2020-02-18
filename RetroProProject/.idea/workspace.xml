@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1317b517-3c10-4b8f-b164-78006b23b91d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="1317b517-3c10-4b8f-b164-78006b23b91d" name="Default Changelist" comment="" />
+>>>>>>> 989f1cd71f4aea0da132c9b9883c942876d705d0
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,19 +117,19 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/reservacion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\reservacion" />
-      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\app\Http\reser" />
       <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views" />
       <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\template" />
       <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\producto" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\public" />
+      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\proveedor" />
+      <recent name="C:\Users\krlos\Documents\RetroPro\RetroProRepo\RetroProProject\resources\views\alquiler" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -163,6 +167,7 @@
       <workItem from="1580936242868" duration="10787000" />
       <workItem from="1581039772614" duration="6763000" />
       <workItem from="1581111315119" duration="3216000" />
+<<<<<<< HEAD
       <workItem from="1581430326213" duration="4666000" />
       <workItem from="1581608388960" duration="1328000" />
       <workItem from="1581698448789" duration="1405000" />
@@ -171,6 +176,8 @@
       <workItem from="1581954864908" duration="9000" />
       <workItem from="1581968600365" duration="630000" />
       <workItem from="1581980372158" duration="10128000" />
+=======
+>>>>>>> 989f1cd71f4aea0da132c9b9883c942876d705d0
     </task>
     <servers />
   </component>

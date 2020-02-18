@@ -13,10 +13,10 @@
                     <a class="nav-link navbar-brand text-white" href="{{route('producto.index')}}">Articulos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-brand text-white" href="{{route('provedor.index')}}">Proveedores</a>
+                    <a class="nav-link navbar-brand text-white" href={{route('provedor.index')}}>Proveedores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-brand text-white" href="{{route('reservacion.index')}}">Reservación</a>
+                    <a class="nav-link navbar-brand text-white" href="#">Alquileres</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbar-brand text-white" href="{{route('register')}}">Usuario</a>
@@ -42,5 +42,6 @@
         </div>
     </nav>
 </div>
+
 
 <br>
