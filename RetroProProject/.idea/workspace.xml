@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1317b517-3c10-4b8f-b164-78006b23b91d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProvedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProvedorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservacionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slider/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cliente/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cliente/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cliente/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cliente/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/producto/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/producto/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/producto/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/producto/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provedor/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provedor/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provedor/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provedor/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/navAdmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/navAdmin.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +170,7 @@
       <workItem from="1581809576557" duration="2532000" />
       <workItem from="1581954864908" duration="9000" />
       <workItem from="1581968600365" duration="630000" />
-      <workItem from="1581980372158" duration="8992000" />
+      <workItem from="1581980372158" duration="10128000" />
     </task>
     <servers />
   </component>
