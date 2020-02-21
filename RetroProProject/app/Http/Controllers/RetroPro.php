@@ -17,6 +17,10 @@ class RetroPro extends Controller
         //
     }
 
+    public function index()
+    {
+        return view('welcome');
+    }
     public function galeria()
     {
         return view('template.galeria');

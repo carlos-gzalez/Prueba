@@ -16,6 +16,8 @@ Route::get('/', function () {
     //return view('template.inicio');
 });
 
+
+
 Auth::routes();
 
 Route::get('/home', 'ClienteController@index')->name('home');
@@ -43,3 +45,4 @@ Route::get('/conctacto','RetroPro@contacto')->name('RetroPro.contacto');
 Route::get('/galeria','RetroPro@galeria')->name('RetroPro.galeria');
 Route::get('/servicios','RetroPro@servicios')->name('RetroPro.servicios');
 Route::get('/nosotros','RetroPro@nosotros')->name('RetroPro.nosotros');
+Route::get('/retropro','RetroPro@index')->name('RetroPro.index');

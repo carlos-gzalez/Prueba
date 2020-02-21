@@ -3,10 +3,11 @@
 @section('titulo','Nueva Reservacion')
 
 @section('contenido')
-
+    {{$cliente}}
     @include('template.navAdmin')
-
+    {{$cliente}}
     <div class="container">
+        {{$cliente}}
         <form class="needs-validation" method="post" action="{{route('reservacion.store')}}" novalidate>
             @csrf
             <div class="form-row">

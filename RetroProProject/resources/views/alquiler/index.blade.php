@@ -6,7 +6,7 @@
 @section('contenido')
 
     @include('template.navAdmin')
-
+    {{$reservacion}}
     <div class="container">
         <h1>
             Reservaciones
